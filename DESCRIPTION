@@ -1,6 +1,6 @@
 Package: artemisData
-Version: 0.14
-Date: 2015-08-19
+Version: 0.15
+Date: 2015-08-22
 Title: Example data for the `artemis` package
 Author: Tim Triche, Jr. <tim.triche@gmail.com>
 Maintainer: Tim Triche, Jr. <tim.triche@gmail.com>
