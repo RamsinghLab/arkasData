@@ -3,29 +3,20 @@ jsonFile <- system.file("extdata/json", "ns.json", package="artemisData")
 appSession <- fetchAppSession(jsonFile) ## autofill APPSESSION in paths
 names(appSession$samples) <- appSession$samples ## so column names get set 
 appSession$outputPath <- system.file("extdata", "", package="artemisData")
-<<<<<<< HEAD
-NS <- with(appSession, mergeKallisto(samples, outputPath=outputPath))
+
 
 NS <- annotateFeatures(NS)
-=======
-NS <- with(appSession, mergeKallisto(samples, outputPath=outputPath)
-## head(assays(NS)$tpm)
-
->>>>>>> cf1db734e3dea841efe66b8185d2a7576295002c
+NS <- with(appSession, mergeKallisto(samples, outputPath=outputPath))
 NS$subject <- factor(substr(colnames(NS), 2, 2))
 NS$treatment <- substr(colnames(NS), 1, 1) == "s"
 design <- with(as(colData(NS), "data.frame"),
                   model.matrix( ~ treatment + subject ))
 rownames(design) <- colnames(NS)
-<<<<<<< HEAD
 metadata(NS)$design <- design
 
 if (FALSE) { 
   save(NS, file="~/Dropbox/artemisData/data/NS.rda", compress="xz")
 }
-=======
-exptData(NS)$design <- design
 
 ## save a copy for easy retrieval & easy running of examples
 ## save(NS, file="~/Dropbox/artemisData/data/NS.rda", compress="xz")
->>>>>>> cf1db734e3dea841efe66b8185d2a7576295002c
