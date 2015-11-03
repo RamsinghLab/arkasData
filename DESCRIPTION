@@ -1,12 +1,12 @@
 Package: artemisData
-Version: 0.22
-Date: 2015-10-31
+Version: 0.21
+Date: 2015-10-28
 Title: Example data for the `artemis` package
 Author: Tim Triche, Jr. <tim.triche@gmail.com>
 Maintainer: Tim Triche, Jr. <tim.triche@gmail.com>
 Description: Data from 8 RNAseq runs (3 subjects paired, 2 unpaired) as HDF5
 License: AGPL
 Depends: artemis, matrixStats
-Suggests: sleuth, biomaRt
+Suggests: sleuth, biomaRt, TxDbLite
 biocViews: ExperimentData, Homo_sapiens_Data, RNAseq
 NeedsCompilation: no
