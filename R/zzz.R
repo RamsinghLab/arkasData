@@ -1,1 +1,1 @@
-data("NS", package="artemisData")
+data("NS", package="arkasData")
