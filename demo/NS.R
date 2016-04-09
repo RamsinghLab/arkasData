@@ -1,8 +1,8 @@
-suppressPackageStartupMessages(library(artemisData))
-jsonFile <- system.file("extdata/json", "ns.json", package="artemisData")
+suppressPackageStartupMessages(library(arkasData))
+jsonFile <- system.file("extdata/json", "ns.json", package="arkasData")
 appSession <- fetchAppSession(jsonFile) ## autofill APPSESSION in paths
 names(appSession$samples) <- appSession$samples ## so column names get set 
-appSession$outputPath <- system.file("extdata", "", package="artemisData")
+appSession$outputPath <- system.file("extdata", "", package="arkasData")
 
 
 
@@ -22,5 +22,5 @@ metadata(NS)$design <- design
 
 
 if (FALSE) { 
-  save(NS, file="~/Dropbox/artemisData/data/NS.rda", compress="xz")
+  save(NS, file="~/Dropbox/arkasData/data/NS.rda", compress="xz")
 }
