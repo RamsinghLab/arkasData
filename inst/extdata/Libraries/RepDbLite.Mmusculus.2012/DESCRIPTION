@@ -1,0 +1,16 @@
+Package: RepDbLite.Mmusculus.2012
+Title: RepBase-based annotation package
+Description: lightweight RepBase transcript annotations
+Version: 1.0
+Author: /home/arcolombo/Documents/RLibraries/
+Maintainer: /home/arcolombo/Documents/RLibraries/ <dev@null.com>
+Depends: TxDbLite
+Imports: GenomicFeatures, RSQLite
+License: Artistic-2.0
+organism: Mus musculus
+species: Mus musculus
+provider: RepBase
+provider_version: RepBase20_12
+release_date: Wed Apr 20 15:49:01 2016
+resource_url: http://www.girinst.org/server/RepBase/protected/RepBaseRepBase20_12.fasta/
+biocViews: AnnotationData, EnsDbLite, Mus_musculus
