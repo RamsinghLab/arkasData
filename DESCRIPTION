@@ -1,6 +1,6 @@
 Package: arkasData
-Version: 0.24
-Date: 2016-4-10
+Version: 0.25
+Date: 2016-5-8
 Title: Example data for the `arkas` package
 Author: Tim Triche, Jr. <tim.triche@gmail.com>
 Maintainer: Tim Triche, Jr. <tim.triche@gmail.com>
