@@ -1,18 +1,20 @@
 Package: arkasData
 Version: 0.25
-Date: 2016-5-8
+Date: 2016-8-17
 Title: Example data for the `arkas` package
 Author: Tim Triche, Jr. <tim.triche@gmail.com>
 Maintainer: Tim Triche, Jr. <tim.triche@gmail.com>
 Description: Data from 8 RNAseq runs (3 subjects paired, 2 unpaired) as HDF5
 License: AGPL
-Depends:
-    arkas,
-    matrixStats
+Depends: R(>= 2.10.0),
+         arkas
+Imports: utils
 Suggests:
     sleuth,
     biomaRt,
-    TxDbLite
+    TxDbLite,
+    matrixStats
 biocViews: ExperimentData, Homo_sapiens_Data, RNAseq
 NeedsCompilation: no
+LazyData: true
 RoxygenNote: 5.0.1

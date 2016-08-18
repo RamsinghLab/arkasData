@@ -1,1 +1,0 @@
-data("NS", package="arkasData")
