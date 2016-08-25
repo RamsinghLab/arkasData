@@ -4,8 +4,7 @@ Date: 2016-8-17
 Title: Example data for the `arkas` package
 Author: Tim Triche, Jr. <tim.triche@gmail.com>
 Maintainer: Tim Triche, Jr. <tim.triche@gmail.com>
-Description: Data from 8 RNAseq runs (3 subjects paired, 2 unpaired) as HDF5.  Also contains a public MDS RNA-Seq subset that is used for the arkas vignettes.
-License: GPL (>=2.0)
+Description: Data from 8 RNAseq runs (3 subjects paired, 2 unpaired) as HDF5.  Also contains a public MDS RNA-Seq subset that is used for the arkas vignettes. Please be aware that arkas and arkasData is under the GPL License and is free for NON-COMMERCIAL use only.
 Depends: R(>= 2.10.0)
 Suggests:
     sleuth,
@@ -17,4 +16,5 @@ Suggests:
 biocViews: ExperimentData, Homo_sapiens_Data, RNAseq
 NeedsCompilation: no
 LazyData: true
+License: GPL (>=2)
 RoxygenNote: 5.0.1
